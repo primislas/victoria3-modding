@@ -1,0 +1,9 @@
+{
+  "name": "Nations Released",
+  "id": "com.github.nations.released",
+  "version": "0.1",
+  "game_id": "victoria3",
+  "supported_game_version" : "1.0.4",
+  "short_description" : "Releases all nations which have primary tags",
+  "tags" : ["nations", "released"]
+}
