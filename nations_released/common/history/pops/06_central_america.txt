@@ -18,7 +18,7 @@ POPS = {
 				size = 312000
 			}
 		}
-		region_state:GBR = {
+		region_state:JAM = {
 			create_pop = {
 				culture = afro_caribbean
 				size = 7104

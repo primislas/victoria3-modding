@@ -411,7 +411,7 @@ POPS = {
 		region_state:MOR = {
 			create_pop = {
 				culture = maghrebi
-				size = 374188
+				size = 420588
 			}
 			create_pop = {
 				culture = sephardic
@@ -419,26 +419,16 @@ POPS = {
 			}
 			create_pop = {
 				culture = berber
-				size = 71800
+				size = 76800
 			}
 			create_pop = {
 				pop_type = slaves
 				culture = bambara
 				size = 34000
 			}
-		}
-		region_state:SPA = {
-			create_pop = {
-				culture = maghrebi
-				size = 46400
-			}
 			create_pop = {
 				culture = spanish
 				size = 1000
-			}
-			create_pop = {
-				culture = berber
-				size = 5000
 			}
 		}
 	}
@@ -482,42 +472,24 @@ POPS = {
 		region_state:MAS = {
 			create_pop = {
 				culture = maghrebi
-				size = 541914
+				size = 626636
 			}
 			create_pop = {
 				culture = berber
-				size = 703830
+				size = 743973
 			}
 			create_pop = {
 				culture = turkish
-				size = 1023
+				size = 3724
 			}
 			create_pop = {
 				culture = sephardic
-				size = 2606
+				size = 10455
 			}
 			create_pop = {
 				pop_type = slaves
 				culture = bambara
 				size = 24012
-			}
-		}
-		region_state:FRA = {
-			create_pop = {
-				culture = maghrebi
-				size = 84722
-			}
-			create_pop = {
-				culture = berber
-				size = 40143
-			}
-			create_pop = {
-				culture = turkish
-				size = 2701
-			}
-			create_pop = {
-				culture = sephardic
-				size = 7849
 			}
 			create_pop = {
 				culture = french
@@ -533,42 +505,24 @@ POPS = {
 		region_state:AIT = {
 			create_pop = {
 				culture = maghrebi
-				size = 264077
+				size = 282907
 			}
 			create_pop = {
 				culture = berber
-				size = 1466354
+				size = 1477374
 			}
 			create_pop = {
 				culture = turkish
-				size = 1401
+				size = 1702
 			}
 			create_pop = {
 				culture = sephardic
-				size = 4950
+				size = 6728
 			}
 			create_pop = {
 				pop_type = slaves
 				culture = bambara
 				size = 41301
-			}
-		}
-		region_state:FRA = {
-			create_pop = {
-				culture = maghrebi
-				size = 18830
-			}
-			create_pop = {
-				culture = berber
-				size = 11020
-			}
-			create_pop = {
-				culture = turkish
-				size = 301
-			}
-			create_pop = {
-				culture = sephardic
-				size = 1778
 			}
 			create_pop = {
 				culture = french
@@ -584,42 +538,24 @@ POPS = {
 		region_state:MAS = {
 			create_pop = {
 				culture = maghrebi
-				size = 612178
+				size = 653198
 			}
 			create_pop = {
 				culture = berber
-				size = 100234
+				size = 103246
 			}
 			create_pop = {
 				culture = turkish
-				size = 2084
+				size = 2696
 			}
 			create_pop = {
 				culture = sephardic
-				size = 2910
+				size = 5514
 			}
 			create_pop = {
 				pop_type = slaves
 				culture = bambara
 				size = 18401
-			}
-		}
-		region_state:FRA = {
-			create_pop = {
-				culture = maghrebi
-				size = 41020
-			}
-			create_pop = {
-				culture = berber
-				size = 3012
-			}
-			create_pop = {
-				culture = turkish
-				size = 612
-			}
-			create_pop = {
-				culture = sephardic
-				size = 2604
 			}
 			create_pop = {
 				culture = french

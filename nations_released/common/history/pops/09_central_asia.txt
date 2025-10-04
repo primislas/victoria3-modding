@@ -193,14 +193,10 @@ POPS = {
 		}
 	}
 	s:STATE_SAMARA = {
-		region_state:DON = {
-			create_pop = {
-				culture = russian
-				size = 1255657
-			}
+		region_state:TAR = {
 			create_pop = {
 				culture = tatar
-				size = 128076
+				size = 1383733
 			}
 			create_pop = {
 				culture = mordvin
@@ -259,14 +255,10 @@ POPS = {
 		}
 	}
 	s:STATE_TARTARIA = {
-		region_state:DON = {
-			create_pop = {
-				culture = russian
-				size = 909377
-			}
+		region_state:TAR = {
 			create_pop = {
 				culture = tatar
-				size = 54224
+				size = 963601
 			}
 			create_pop = {
 				culture = ukrainian

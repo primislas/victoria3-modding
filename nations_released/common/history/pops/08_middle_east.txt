@@ -347,7 +347,7 @@ POPS = {
 		}
 	}
 	s:STATE_TRANSJORDAN = {
-		region_state:EGY = {
+		region_state:EOT = {
 			create_pop = {
 				culture = bedouin
 				religion = sunni
@@ -1327,18 +1327,14 @@ POPS = {
 		}
 	}
 	s:STATE_AYDIN = {
-		region_state:TUR = {
+		region_state:GRE = {
 			create_pop = {
-				culture = turkish
-				size = 598129
+				culture = greek
+				size = 972249
 			}
 			create_pop = {
 				culture = armenian
 				size = 7368
-			}
-			create_pop = {
-				culture = greek
-				size = 374120
 			}
 			create_pop = {
 				culture = greek
@@ -1547,7 +1543,7 @@ POPS = {
 		}
 	}
 	s:STATE_ERZURUM = {
-		region_state:KUR = {
+		region_state:ARM = {
 			create_pop = {
 				culture = turkish
 				size = 150831
@@ -1601,10 +1597,10 @@ POPS = {
 		}
 	}
 	s:STATE_KARS = {
-		region_state:TUR = {
+		region_state:ARM = {
 			create_pop = {
-				culture = turkish
-				size = 61000
+				culture = armenian
+				size = 117500
 			}
 			create_pop = {
 				culture = georgian
@@ -1617,11 +1613,7 @@ POPS = {
 			}
 			create_pop = {
 				culture = kurdish
-				size = 15000
-			}
-			create_pop = {
-				culture = armenian
-				size = 28500
+				size = 22000
 			}
 			create_pop = {
 				culture = greek
@@ -1636,20 +1628,6 @@ POPS = {
 				pop_type = slaves
 				culture = georgian
 				size = 1400
-			}
-		}
-		region_state:AZB = {
-			create_pop = {
-				culture = azerbaijani
-				size = 17000
-			}
-			create_pop = {
-				culture = kurdish
-				size = 7000
-			}
-			create_pop = {
-				culture = armenian
-				size = 11000
 			}
 		}
 	}

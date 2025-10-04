@@ -61,10 +61,10 @@ POPS = {
 		}
 	}
 	s:STATE_SMOLENSK = {
-		region_state:RUS = {
+		region_state:BYE = {
 			create_pop = {
-				culture = russian
-				size = 949892
+				culture = byelorussian
+				size = 1018334
 			}
 			create_pop = {
 				culture = ashkenazi
@@ -73,10 +73,6 @@ POPS = {
 			create_pop = {
 				culture = polish
 				size = 4148
-			}
-			create_pop = {
-				culture = byelorussian
-				size = 68442
 			}
 		}
 	}
@@ -93,7 +89,7 @@ POPS = {
 		}
 	}
 	s:STATE_KURSK = {
-		region_state:RUS = {
+		region_state:DON = {
 			create_pop = {
 				culture = russian
 				size = 1511408

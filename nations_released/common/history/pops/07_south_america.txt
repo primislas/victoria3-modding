@@ -25,7 +25,7 @@ POPS = {
 		}
 	}
 	s:STATE_GUAYANA = {
-		region_state:NET = {
+		region_state:WIN = {
 			create_pop = {
 				culture = afro_caribbean
 				religion = animist
@@ -37,11 +37,15 @@ POPS = {
 			}
 			create_pop = {
 				culture = amazonian
-				size = 7796
+				size = 15796
 			}
 			create_pop = {
 				culture = afro_caribbean
-				size = 12000
+				size = 104000
+			}
+			create_pop = {
+				culture = british
+				size = 3588
 			}
 		}
 		region_state:HAI = {
@@ -56,20 +60,6 @@ POPS = {
 			create_pop = {
 				culture = afro_antillean
 				size = 14400
-			}
-		}
-		region_state:GBR = {
-			create_pop = {
-				culture = afro_caribbean
-				size = 92000
-			}
-			create_pop = {
-				culture = british
-				size = 3588
-			}
-			create_pop = {
-				culture = amazonian
-				size = 8000
 			}
 		}
 	}
@@ -509,7 +499,7 @@ POPS = {
 		}
 	}
 	s:STATE_BAJO_PARAGUAY = {
-		region_state:ARG = {
+		region_state:GRI = {
 			create_pop = {
 				culture = platinean
 				size = 125764
@@ -643,7 +633,7 @@ POPS = {
 		}
 	}
 	s:STATE_CORRIENTES = {
-		region_state:ARG = {
+		region_state:GRI = {
 			create_pop = {
 				culture = platinean
 				size = 101462
@@ -757,7 +747,7 @@ POPS = {
 		}
 	}
 	s:STATE_SOUTH_ATLANTIC_ISLANDS = {
-		region_state:GBR = {
+		region_state:ENG = {
 			create_pop = {
 				culture = british
 				size = 14540

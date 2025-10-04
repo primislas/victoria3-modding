@@ -280,9 +280,9 @@ POPS = {
 		}
 	}
 	s:STATE_AMUR = {
-		region_state:BRY = {
+		region_state:MCH = {
 			create_pop = {
-				culture = buryat
+				culture = siberian
 				size = 81123
 			}
 			create_pop = {

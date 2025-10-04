@@ -928,10 +928,10 @@ POPS = {
 		}
 	}
 	s:STATE_PSKOV = {
-		region_state:RUS = {
+		region_state:BYE = {
 			create_pop = {
-				culture = russian
-				size = 680165
+				culture = byelorussian
+				size = 682463
 			}
 			create_pop = {
 				culture = estonian
@@ -953,10 +953,6 @@ POPS = {
 				culture = finnish
 				size = 2513
 			}
-			create_pop = {
-				culture = byelorussian
-				size = 2298
-			}
 		}
 	}
 	s:STATE_YAROSLAVL = {
@@ -972,9 +968,9 @@ POPS = {
 		}
 	}
 	s:STATE_RYAZAN = {
-		region_state:RUS = {
+		region_state:MRD = {
 			create_pop = {
-				culture = russian
+				culture = mordvin
 				size = 1235720
 			}
 			create_pop = {

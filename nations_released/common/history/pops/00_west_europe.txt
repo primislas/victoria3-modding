@@ -180,7 +180,7 @@ POPS = {
 		}
 	}
 	s:STATE_LANCASHIRE = {
-		region_state:GBR = {
+		region_state:ENG = {
 			create_pop = {
 				culture = british
 				size = 1986404
@@ -209,7 +209,7 @@ POPS = {
 		}
 	}
 	s:STATE_YORKSHIRE = {
-		region_state:GBR = {
+		region_state:ENG = {
 			create_pop = {
 				culture = british
 				size = 2026592
@@ -239,7 +239,7 @@ POPS = {
 		}
 	}
 	s:STATE_MIDLANDS = {
-		region_state:GBR = {
+		region_state:ENG = {
 			create_pop = {
 				culture = british
 				size = 2543604
@@ -256,7 +256,7 @@ POPS = {
 		}
 	}
 	s:STATE_EAST_ANGLIA = {
-		region_state:GBR = {
+		region_state:ENG = {
 			create_pop = {
 				culture = british
 				size = 1565208

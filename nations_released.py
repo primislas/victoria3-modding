@@ -102,8 +102,12 @@ primary_tags = {
     "khmer": "CAM",
     "burmese": "BUR",
     "polish": "POL",
-    # "british": "ENG",
+    "british": "ENG",
     "greek": "GRE",
+    "bengali": "BGL",
+    "marathi": "SAT",
+    "bundeli": "BUN",
+    "javan": "JAV",
 }
 
 primary_state_tags = {
@@ -133,12 +137,17 @@ primary_state_tags = {
         "STATE_LOMBARDY": "LOM",
         "STATE_SOUTH_TYROL": "LOM",
     },
+    "spanish": {
+        "STATE_ANDALUSIA": "ANL",
+        "STATE_GRANADA": "ANL",
+        "STATE_VALENCIA": "CAT",
+        "STATE_ARAGON": "CAT",
+    },
     "russian": {
         "STATE_ROSTOV": "DON",
         "STATE_STAVROPOL": "DON",
-        "STATE_TARTARIA": "DON",
-        "STATE_SAMARA": "DON",
         "STATE_ASTRAKHAN": "DON",
+        "STATE_KURSK": "DON",
 
         "STATE_TOMSK": "URL",
         "STATE_TOBOLSK": "URL",
@@ -152,6 +161,9 @@ primary_state_tags = {
     "azerbaijani": {
         "STATE_KARS": "ARM",
     },
+     "kurdish": {
+        "STATE_ERZURUM": "ARM",
+    },
     "serb": {
         "STATE_BOSNIA": "BOS",
         "STATE_EASTERN_SERBIA": "SER",
@@ -160,9 +172,13 @@ primary_state_tags = {
         "STATE_ALEPPO": "SYR",
         "STATE_DEIR_EZ_ZOR": "IRQ",
         "STATE_BASRA": "IRQ",
-    },
-    "bedouin": {
         "STATE_TRANSJORDAN": "EOT",
+    },
+    "maghrebi": {
+        "STATE_ORAN": "MAS",
+        "STATE_ALGIERS": "MAS",
+        "STATE_AL_RIF": "MOR",
+        "STATE_CONSTANTINE": "AIT",
     },
     "kazak": {
         "STATE_JETISY": "OZH",
@@ -182,6 +198,91 @@ primary_state_tags = {
     },
     "nordestino": {
         "STATE_BAHIA": "BHI",
+    },
+    "tamil": {
+        "STATE_MADRAS": "PUD",
+    },
+    "malayalam": {
+        "STATE_TRAVANCORE": "TRA",
+    },
+    "telegu": {
+        "STATE_KURNOOL": "KNO",
+    },
+    "oriya": {
+        "STATE_ORISSA": "NAR",
+    },
+    "sumatran": {
+        "STATE_NORTH_SUMATRA": "JMB",
+        "STATE_SOUTH_SUMATRA": "SAK",
+    },
+    "moluccan": {
+        "STATE_SUNDA_ISLANDS": "BTN",
+    },
+    "melanesian": {
+        "STATE_WESTERN_NEW_GUINEA": "PPU",
+        "STATE_SUNDA_ISLANDS": "PPU",
+    },
+    "shona": {
+        "STATE_LOURENCO_MARQUES": "BTG",
+    },
+    "bakongo": {
+        "STATE_NORTH_ANGOLA": "KON",
+    },
+    "akan": {
+        "STATE_TOGO": "EWE",
+    },
+    "fulbe": {
+        "STATE_SENEGAL": "FTR",
+    },
+    "siouan": {
+        "STATE_NORTH_DAKOTA": "ABS",
+        "STATE_SOUTH_DAKOTA": "PWN",
+        "STATE_NEBRASKA": "PWN",
+        "STATE_KANSAS": "PWN",
+        "STATE_WYOMING": "ARP",
+    },
+    "mexican": {
+        "STATE_NEW_MEXICO": "CCM",
+    },
+    "platinean": {
+        "STATE_CORRIENTES": "GRI",
+        "STATE_BAJO_PARAGUAY": "GRI",
+    },
+    "afro_caribbean": {
+        "STATE_GUATEMALA": "JAM",
+        "STATE_GUAYANA": "WIN",
+    },
+    "hokan": {
+        "STATE_CALIFORNIA": "CAL",
+    },
+    "paiute": {
+        "STATE_NEVADA": "BNN",
+    },
+    "afro_american": {
+        "STATE_LOUISIANA": "LOU",
+        "STATE_SOUTH_CAROLINA": "SCR",
+    },
+    "dixie": {
+        "STATE_NORTH_CAROLINA": "NCR",
+        "STATE_VIRGINIA": "CSA",
+        "STATE_ARKANSAS": "CSA",
+        "STATE_TENNESSEE": "CSA",
+        "STATE_MISSISSIPPI": "CSA",
+        "STATE_ALABAMA": "CSA",
+        "STATE_WEST_VIRGINIA": "USA",
+        "STATE_MARYLAND": "USA",
+        "STATE_DELAWARE": "CSA",
+    },
+    "yankee": {
+        "STATE_NEW_YORK": "FSA",
+        "STATE_NEW_JERSEY": "FSA",
+        "STATE_CONNECTICUT": "FSA",
+        "STATE_RHODE_ISLAND": "FSA",
+
+        "STATE_MASSACHUSETTS": "NEN",
+        "STATE_NEW_HAMPSHIRE": "NEN",
+        "STATE_VERMONT": "NEN",
+        "STATE_MAINE": "NEN",
     },
 }
 
@@ -238,10 +339,6 @@ state_culture_assignments = {
         "tag": "BRY",
         "culture": "buryat",
     },
-    # "STATE_AMUR": {
-    #     "tag": "BRY",
-    #     "culture": "buryat",
-    # },
     "STATE_TRANS_BAIKAL": {
         "tag": "BRY",
         "culture": "buryat",
@@ -253,6 +350,34 @@ state_culture_assignments = {
     "STATE_GANSU": {
         "tag": "MGL",
         "culture": "mongol",
+    },
+    "STATE_AYDIN": {
+        "tag": "GRE",
+        "culture": "greek",
+    },
+    "STATE_TARTARIA": {
+        "tag": "TAR",
+        "culture": "tatar",
+    },
+    "STATE_SAMARA": {
+        "tag": "TAR",
+        "culture": "tatar",
+    },
+    "STATE_RYAZAN": {
+        "tag": "MRD",
+        "culture": "mordvin",
+    },
+    "STATE_SMOLENSK": {
+        "tag": "BYE",
+        "culture": "byelorussian",
+    },
+    "STATE_PSKOV": {
+        "tag": "BYE",
+        "culture": "byelorussian",
+    },
+    "STATE_KARS": {
+        "tag": "ARM",
+        "culture": "armenian",
     },
 
 }
@@ -350,18 +475,18 @@ def identify_occupied_states(countries: list[CountryDef], states: list[StateDefi
         pops_by_country_id = _group_pops_by_country_id(state_regions)
         for country_id, country_pops in pops_by_country_id.items():
             dominant_culture = identify_dominant_culture(country_pops)
+            primary_tag = primary_state_tags.get(dominant_culture, {}).get(state_id)
+            nation_state = countries_by_id.get(primary_tag)
+
             country = countries_by_id.get(country_id)
-            nation_state = None
             warnings = []
-            if country:
+            if country and not nation_state:
                 nation_state, warnings = identify_primary_country(state_id, country_id, dominant_culture, countries)
             else:
                 warnings.append(f"Could not find country definition for {country_id} in state {state_id}")
 
             if not nation_state:
                 primary_tag = primary_tags.get(dominant_culture)
-                if not primary_tag:
-                    primary_tag = primary_state_tags.get(dominant_culture, {}).get(state_id)
                 if primary_tag and primary_tag != country_id:
                     logger.debug(f"Assigning primary tag {dominant_culture} in {state_id}: {country_id} -> {primary_tag}")
                     nation_state = countries_by_id.get(primary_tag)

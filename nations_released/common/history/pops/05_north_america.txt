@@ -17,7 +17,7 @@ POPS = {
 		}
 	}
 	s:STATE_LOUISIANA = {
-		region_state:USA = {
+		region_state:LOU = {
 			create_pop = {
 				culture = cajun
 				religion = catholic
@@ -207,22 +207,10 @@ POPS = {
 		}
 	}
 	s:STATE_WYOMING = {
-		region_state:USA = {
-			create_pop = {
-				culture = siouan
-				size = 8000
-			}
-		}
-		region_state:LKT = {
-			create_pop = {
-				culture = siouan
-				size = 6000
-			}
-		}
 		region_state:ARP = {
 			create_pop = {
 				culture = siouan
-				size = 4000
+				size = 24500
 			}
 		}
 		region_state:BNN = {
@@ -235,12 +223,6 @@ POPS = {
 			create_pop = {
 				culture = salish
 				size = 5600
-			}
-		}
-		region_state:ABS = {
-			create_pop = {
-				culture = siouan
-				size = 6500
 			}
 		}
 	}
@@ -269,7 +251,7 @@ POPS = {
 		}
 	}
 	s:STATE_NORTH_DAKOTA = {
-		region_state:USA = {
+		region_state:ABS = {
 			create_pop = {
 				culture = siouan
 				size = 6000
@@ -293,7 +275,7 @@ POPS = {
 				size = 34000
 			}
 		}
-		region_state:USA = {
+		region_state:PWN = {
 			create_pop = {
 				culture = siouan
 				size = 4000
@@ -301,10 +283,14 @@ POPS = {
 		}
 	}
 	s:STATE_NEBRASKA = {
-		region_state:USA = {
+		region_state:PWN = {
 			create_pop = {
 				culture = siouan
-				size = 4000
+				size = 6000
+			}
+			create_pop = {
+				culture = caddoan
+				size = 10000
 			}
 		}
 		region_state:LKT = {
@@ -313,34 +299,16 @@ POPS = {
 				size = 4000
 			}
 		}
-		region_state:PWN = {
-			create_pop = {
-				culture = caddoan
-				size = 10000
-			}
-			create_pop = {
-				culture = siouan
-				size = 2000
-			}
-		}
 	}
 	s:STATE_KANSAS = {
-		region_state:USA = {
+		region_state:PWN = {
 			create_pop = {
 				culture = siouan
-				size = 12000
+				size = 16000
 			}
-		}
-		region_state:PWN = {
 			create_pop = {
 				culture = caddoan
 				size = 8000
-			}
-		}
-		region_state:COM = {
-			create_pop = {
-				culture = siouan
-				size = 4000
 			}
 		}
 	}
@@ -372,7 +340,7 @@ POPS = {
 		}
 	}
 	s:STATE_ARKANSAS = {
-		region_state:USA = {
+		region_state:CSA = {
 			create_pop = {
 				culture = cajun
 				religion = catholic
@@ -569,7 +537,7 @@ POPS = {
 		}
 	}
 	s:STATE_TENNESSEE = {
-		region_state:USA = {
+		region_state:CSA = {
 			create_pop = {
 				culture = dixie
 				size = 369604
@@ -598,7 +566,7 @@ POPS = {
 		}
 	}
 	s:STATE_MISSISSIPPI = {
-		region_state:USA = {
+		region_state:CSA = {
 			create_pop = {
 				culture = dixie
 				size = 172804
@@ -615,7 +583,7 @@ POPS = {
 		}
 	}
 	s:STATE_ALABAMA = {
-		region_state:USA = {
+		region_state:CSA = {
 			create_pop = {
 				culture = dixie
 				size = 329008
@@ -737,7 +705,7 @@ POPS = {
 		}
 	}
 	s:STATE_DELAWARE = {
-		region_state:USA = {
+		region_state:CSA = {
 			create_pop = {
 				culture = dixie
 				size = 77000
@@ -780,7 +748,7 @@ POPS = {
 		}
 	}
 	s:STATE_NEW_JERSEY = {
-		region_state:USA = {
+		region_state:FSA = {
 			create_pop = {
 				culture = yankee
 				size = 303200
@@ -809,7 +777,7 @@ POPS = {
 		}
 	}
 	s:STATE_RHODE_ISLAND = {
-		region_state:USA = {
+		region_state:FSA = {
 			create_pop = {
 				culture = yankee
 				size = 104820
@@ -817,7 +785,7 @@ POPS = {
 		}
 	}
 	s:STATE_CONNECTICUT = {
-		region_state:USA = {
+		region_state:FSA = {
 			create_pop = {
 				culture = yankee
 				size = 199228
@@ -846,7 +814,7 @@ POPS = {
 		}
 	}
 	s:STATE_NEW_HAMPSHIRE = {
-		region_state:USA = {
+		region_state:NEN = {
 			create_pop = {
 				culture = yankee
 				size = 223300
@@ -863,7 +831,7 @@ POPS = {
 		}
 	}
 	s:STATE_VERMONT = {
-		region_state:USA = {
+		region_state:NEN = {
 			create_pop = {
 				culture = yankee
 				size = 282848
@@ -871,7 +839,7 @@ POPS = {
 		}
 	}
 	s:STATE_MAINE = {
-		region_state:USA = {
+		region_state:NEN = {
 			create_pop = {
 				culture = anglo_canadian
 				size = 16000
@@ -883,7 +851,7 @@ POPS = {
 		}
 	}
 	s:STATE_NORTH_CAROLINA = {
-		region_state:USA = {
+		region_state:NCR = {
 			create_pop = {
 				culture = dixie
 				size = 492500
@@ -922,7 +890,7 @@ POPS = {
 		}
 	}
 	s:STATE_SOUTH_CAROLINA = {
-		region_state:USA = {
+		region_state:SCR = {
 			create_pop = {
 				culture = dixie
 				size = 253836
@@ -1228,7 +1196,7 @@ POPS = {
 		}
 	}
 	s:STATE_BERMUDA = {
-		region_state:GBR = {
+		region_state:ENG = {
 			create_pop = {
 				culture = british
 				size = 14848
@@ -1285,16 +1253,10 @@ POPS = {
 		}
 	}
 	s:STATE_NEVADA = {
-		region_state:MEX = {
-			create_pop = {
-				culture = paiute
-				size = 22000
-			}
-		}
 		region_state:BNN = {
 			create_pop = {
 				culture = paiute
-				size = 6000
+				size = 28000
 			}
 		}
 	}
@@ -1335,7 +1297,7 @@ POPS = {
 		}
 	}
 	s:STATE_NEW_MEXICO = {
-		region_state:MEX = {
+		region_state:CCM = {
 			create_pop = {
 				culture = mexican
 				size = 27796
@@ -1369,7 +1331,7 @@ POPS = {
 		}
 	}
 	s:STATE_CALIFORNIA = {
-		region_state:MEX = {
+		region_state:CAL = {
 			create_pop = {
 				culture = hokan
 				size = 52000
