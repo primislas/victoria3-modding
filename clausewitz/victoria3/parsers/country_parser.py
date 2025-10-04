@@ -1,15 +1,53 @@
 import os
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import List, Optional
+from typing import List, Optional, Literal
 
+from clausewitz.victoria3 import logging_utils
 from clausewitz.victoria3.tokenizer import TokenType, Token, Lexer
 
 
+logger = logging_utils.get_logger(__name__, "DEBUG")
+
+
 @dataclass
-class CountryDefinition:
+class RGBColor:
+    red: int
+    green: int
+    blue: int
+
+    def __init__(self, red: int, green: int, blue: int):
+        self.red = red
+        self.green = green
+        self.blue = blue
+
+    def __str__(self):
+        return f"RGB({self.red}, {self.green}, {self.blue})"
+
+
+@dataclass
+class HSVColor:
+    hue: float
+    saturation: float
+    value: float
+
+    def __init__(self, hue: float, saturation: float, value: float):
+        self.hue = hue
+        self.saturation = saturation
+        self.value = value
+
+    def __str__(self):
+        return f"HSV({self.hue}, {self.saturation}, {self.value})"
+
+
+Color = RGBColor | HSVColor
+
+
+@dataclass
+class CountryDef:
     """Represents a country definition"""
     tag: str
+    color: Optional[Color] = None
     cultures: List[str] = field(default_factory=list)
     religion: Optional[str] = None
     capital: Optional[str] = None
@@ -25,16 +63,16 @@ class CountryDefinition:
 class CountryFile:
     """Root structure representing the entire countries file"""
     filename: str
-    countries: List[CountryDefinition] = field(default_factory=list)
+    countries: List[CountryDef] = field(default_factory=list)
 
-    def get_country(self, tag: str) -> Optional[CountryDefinition]:
+    def get_country(self, tag: str) -> Optional[CountryDef]:
         """Get a country by its tag"""
         for country in self.countries:
             if country.tag == tag:
                 return country
         return None
 
-    def get_countries_by_culture(self, culture: str) -> List[CountryDefinition]:
+    def get_countries_by_culture(self, culture: str) -> List[CountryDef]:
         """Get all countries that have the specified culture"""
         return [country for country in self.countries if culture in country.cultures]
 
@@ -98,7 +136,7 @@ class CountryParser:
 
         return country_file
 
-    def parse_country(self) -> Optional[CountryDefinition]:
+    def parse_country(self) -> Optional[CountryDef]:
         """Parse a country block: TAG = { ... }"""
         # Expect: TAG (3-letter country code)
         tag_token = self.current_token()
@@ -117,7 +155,7 @@ class CountryParser:
         # Expect: {
         self.expect(TokenType.LBRACE)
 
-        country = CountryDefinition(tag=tag)
+        country = CountryDef(tag=tag)
 
         # Parse country properties
         while self.current_token().type != TokenType.RBRACE:
@@ -142,12 +180,31 @@ class CountryParser:
                 self.expect(TokenType.RBRACE)
                 country.cultures = cultures
 
+            elif prop_name == 'color':
+                next_token = self.peek_token()
+                is_hsv = False
+                if next_token.type == TokenType.IDENTIFIER:
+                    self.advance()
+                    if next_token.value != 'hsv':
+                        logger.warning(f"Unknown color scheme, treating as hsv: {next_token.value}")
+                    is_hsv = True
+
+                self.expect(TokenType.LBRACE)
+                color_args = []
+                while self.current_token().type != TokenType.RBRACE:
+                    color_arg_token = self.current_token()
+                    if color_arg_token.type == TokenType.NUMBER:
+                        val = int(color_arg_token.value) if not is_hsv else float(color_arg_token.value)
+                        color_args.append(val)
+                        self.advance()
+                    else:
+                        self.error(f"Expected number, got {color_arg_token.type.value}")
+
+                self.expect(TokenType.RBRACE)
+                color = HSVColor(*color_args) if is_hsv else RGBColor(*color_args)
+                country.color = color
+
             elif prop_name == 'religion':
-                # religion = rel:RELIGION
-                rel_prefix = self.expect(TokenType.IDENTIFIER)
-                if rel_prefix.value != 'rel':
-                    self.error(f"Expected 'rel' prefix, got '{rel_prefix.value}'")
-                self.expect(TokenType.COLON)
                 country.religion = self.expect(TokenType.IDENTIFIER).value
 
             elif prop_name == 'capital':

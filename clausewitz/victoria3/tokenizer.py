@@ -98,14 +98,22 @@ class Lexer:
 
         return string
 
-    def read_number(self) -> int:
-        """Read a number"""
+    def read_number(self) -> int | float:
+        """Read a number (integer or float)"""
         num_str = ""
         if self.peek() == '-':
             num_str += self.advance()
 
         while self.peek() and self.peek().isdigit():
             num_str += self.advance()
+
+        # Check for decimal point
+        if self.peek() == '.':
+            num_str += self.advance()
+            # Read decimal part
+            while self.peek() and self.peek().isdigit():
+                num_str += self.advance()
+            return float(num_str)
 
         return int(num_str)
 
